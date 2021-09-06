@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="player">
+        <video  class="video" poster="./img/video_bg.jpg">
+            <source src="./video/video.mp4" type="video/mp4" class="active-video">   
+        </video>
+        <div class="player-controls">
+            <button class="btn btn-play-pause play"></button>
+            <input  type="range" class="progress progress-video" value="0" min="0" max="100" step="1">
+            <button class="btn volume"></button>
+            <input  type="range" class="progress progress-volume" value="0" min="0" max="100" step="1">
+            <button class="btn btn-full-screen"></button>
+        </div>
+        <button class="btn btn-play-main"></button>
+        <div class="slider">
+          <div class="inner-carousel">
+            <ul class="slider-list"> 
+              <li class="slider-item item5">
+                <img class="slider-favicon" src="./img/favicon.ico">
+                <p class="slider-title">Welcome to the Louvre - Bienvenue au Louvre - Musée du Louvre</p>
+                <button class="slider-btn"><img src="./img/Vector.svg" alt="icon-arrow"></button>
+              </li>   
+              <li class="slider-item item1">
+                <img class="slider-favicon" src="./img/favicon.ico">
+                <p class="slider-title">Au Louvre ! La Venus de Milo</p>
+                <button class="slider-btn"><img src="./img/Vector.svg" alt="icon-arrow"></button></li>  
+              <li class="slider-item item2">
+                <img class="slider-favicon" src="./img/favicon.ico">
+                <p class="slider-title">Promenade dans les collections mesop...</p>
+                <button class="slider-btn"><img src="./img/Vector.svg" alt="icon-arrow"></button></li>
+              <li class="slider-item item3">
+                <img class="slider-favicon" src="./img/favicon.ico">
+                <p class="slider-title">Exposition - Le Corps et l’Ame. De Dona...</p>
+                <button class="slider-btn"><img src="./img/Vector.svg" alt="icon-arrow"></button></li>
+              <li class="slider-item item4">
+                <img class="slider-favicon" src="./img/favicon.ico">
+                <p class="slider-title">Exposition - Le Corps et l'Âme. De Donatello à Michel-Ange. Sculptures italiennes de la Renaissance</p>
+                <button class="slider-btn"><img src="./img/Vector.svg" alt=icon-arrow"></button></li>  
+            </ul>
+          </div> 
+            <div class="controls">
+              <button class="controls-btn prev"></button> 
+              <div class="dots-wrapper">  
+                  <button class="dot active"></button>
+                  <button class="dot"></button>
+                  <button class="dot"></button>
+                  <button class="dot"></button>
+                  <button class="dot"></button>      
+              </div>    
+              <button class="controls-btn next"></button>  
+            </div>    
+        </div>
+    <script src="./main.js"></script>
+</body>
+</html>
